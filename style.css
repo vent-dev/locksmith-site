@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center; 
+    overflow: hidden;
+}
+
+.nav-bar img {
+    width: 10rem;
+    height: auto;
+    margin-left: 5rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style-type: none;
+    margin-right: 5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
