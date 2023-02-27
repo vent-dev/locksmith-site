@@ -30,25 +30,61 @@ html, body {
 }
 
 .nav-links li a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
     color: black;
     font-size: larger;
 }
 
-.content-container {
+.slideshow-container {
     display: flex;
-    justify-content: space-around;
-    background: url(images/background.jpg);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.slides img {
+    width: 100%;
+    height: 40rem;
+}
+
+.slide-button {
+    display: flex;
+    border: .2rem solid black;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .content {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-bottom: 10rem;
+    background-color: #45b6fe;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.footer {
-    text-align: center;
+.content-header {
+    font-size: 2rem;
 }
+
+/* .footer {
+    text-align: center;
+} */
