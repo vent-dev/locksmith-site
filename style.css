@@ -130,13 +130,27 @@ html, body {
 
 .our-services {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.first-services, .second-services {
-    display: flex;
-    flex-direction: row;
+.services-header {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services-description {
+    color: black;
+    text-align: center;
+}
+
+.first-services img, .second-services img {
+    width: 20rem;
+    height: 20rem;
 }
 
 /* .footer {
