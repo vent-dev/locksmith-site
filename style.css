@@ -153,6 +153,12 @@ html, body {
     height: 20rem;
 }
 
+.contact-us {
+    background-color: black;
+    color: white;
+    padding-bottom: 40rem;
+}
+
 /* .footer {
     text-align: center;
 } */
