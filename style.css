@@ -139,7 +139,10 @@ html, body {
 
 .services-header {
     color: black;
+    text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    font-family: sans-serif, serif;
     font-size: 2rem;
 }
 
@@ -154,9 +157,19 @@ html, body {
 }
 
 .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: black;
     color: white;
     padding-bottom: 40rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* .footer {
