@@ -6,6 +6,7 @@ html, body {
 
 .nav-bar {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
@@ -53,20 +54,48 @@ html, body {
 
 .slide-info {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     position: absolute;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 50%);
 }
 
 .slides img {
     width: 100%;
-    height: 40rem;
+    height: 45rem;
+}
+
+.slide-header {
+    text-transform: uppercase;
+    font-family: sans-serif, serif;
+    color: #F4E04D;
+    font-weight: bolder;
+    letter-spacing: .3rem;
+}
+
+.slide-description {
+    font-family: sans-serif, serif;
+    color: #FCFCFC;
+    font-size: 2rem;
 }
 
 .slide-button {
     display: flex;
-    border: .2rem solid black;
+    font-family: sans-serif, serif;
+    border: .2rem solid #F4E04D;
+    background-color: #F4E04D;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FCFCFC;
     padding: 1rem 2rem 1rem 2rem;
+}
+
+.content-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .content {
@@ -76,13 +105,38 @@ html, body {
     justify-content: center;
     padding-right: 10rem;
     padding-left: 10rem;
-    padding-bottom: 10rem;
-    background-color: #45b6fe;
+    padding-bottom: 13rem;
+    font-family: sans-serif, serif;
+    background-color: #28C2FF;
     color: white;
+}
+
+.our-team {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.our-team div img {
+    width: 20rem;
+    height: 30rem;
 }
 
 .content-header {
     font-size: 2rem;
+}
+
+.our-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-services, .second-services {
+    display: flex;
+    flex-direction: row;
 }
 
 /* .footer {
