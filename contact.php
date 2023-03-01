@@ -22,7 +22,7 @@ if ($_POST) {
         $email_body .= "<div><label>Message:<label>&nbsp;<span>".$user_message."</span></div>";
     }
 
-    $recipient = "";
+    $recipient = ""; // place recieving email here
 
     $email_body .= "</div>";
 
@@ -31,9 +31,9 @@ if ($_POST) {
     ."From " . $user_email . "\r\n";
 
     if (mail($recipient, $user_subject, $email_body, $headers)){
-        echo "<p>Thankyou for contacting us! You should recieve a response within 24 hours.<p>";
+        echo("<p>Thankyou for contacting us! You should recieve a response within 24 hours.<p>");
     } else {
-        echo "<p>Something went wrong. Please try again or give us a call!<p>";
+        echo("<p>Something went wrong. Please try again or give us a call!<p>");
     }
 }
 ?>
