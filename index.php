@@ -6,12 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="index.php" defer></script>
     <title>Secure Solution</title>
     <link rel="icon" href="images/favicon.png">
     <script src="https://kit.fontawesome.com/ad421c78bd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<script>
+    <?php
+
+    if ($_POST) {
+        $user_email = "";
+        $user_subject = "";
+        $user_message = "";
+        $email_body = "<div>"; 
+
+        if (isset($_POST['user_email'])) {
+            $user_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['user_email']);
+            $user_email = filter_var($user_email, FILTER_VALIDATE_EMAIL);
+            $email_body .= "<div><label>Sender Email:</label>&nbsp;<span>".$user_email."</span></div>";
+        }
+
+        if (isset($_POST['user_subject'])) {
+            $user_subject = filter_var($_POST['user_subject'], FILTER_SANITIZE_STRING);
+            $email_body .= "<div><label>Subject:<label>&nbsp;<span>".$user_subject."</span></div>";
+        }
+
+        if (isset($_POST['user_message'])) {
+            $user_message = htmlspecialchars($_POST['user_message']);
+            $email_body .= "<div><label>Message:<label>&nbsp;<span>".$user_message."</span></div>";
+        }
+
+        $recipient = "cfpixel11@gmail.com"; // place recieving email here
+
+        $email_body .= "</div>";
+
+        $headers = "MIME-Version: 1.0" . "\r\n"
+        ."Content-type: text/html; charset=utf-8" . "\r\n"
+        ."From " . $user_email . "\r\n";
+
+        if (mail($recipient, $user_subject, $email_body, $headers)){
+            $output = "Thankyou for contacting us! You should recieve a response within 24 hours.";
+        } else {
+            $output = "Something went wrong. Please try again or give us a call!";
+        }
+    }
+    ?>
+    </script>
+
     <div class="nav-bar">
         <img src="images/logo.png" alt="">
         <div class="nav-links">
@@ -101,7 +144,7 @@
     <div class="contact-us">
         <p>Contact Us</p>
         <div class="contact-form">
-            <form action="contact.php" method="POST">
+            <form action="index.php" method="POST">
                 Email Address:
                 <input type="text" id="email" name="user_email">
                 Subject:
@@ -109,6 +152,7 @@
                 Message:
                 <textarea name="user_message" id="user_message" cols="30" rows="10"></textarea>
                 <button type="submit">Submit</button>
+                <p class="output"><?php echo $output ?></p>
             </form>
         </div>
     </div>

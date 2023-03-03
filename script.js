@@ -1,7 +1,6 @@
 let slides = document.getElementsByClassName("slides");
 let output = document.getElementsByClassName("output");
 
-
 let slideIndex = 0;
 
 function showSlides(){
