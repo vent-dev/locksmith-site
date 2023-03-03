@@ -144,7 +144,7 @@
     </div>
 
     <div class="contact-us">
-        <p>Contact Us</p>
+        <p class=contact-header>Contact Us</p>
         <div class="contact-form">
             <form action="index.php" method="POST">
                 Email Address:
@@ -159,8 +159,8 @@
         </div>
     </div>
 
-    <!-- <div class="footer">
+    <div class="footer">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, tempora quidem! Maiores distinctio ratione maxime, necessitatibus sequi iusto rerum omnis nemo quis nisi iure cumque laborum qui minus veniam mollitia!
-    </div> -->
+    </div>
 </body>
 </html>
