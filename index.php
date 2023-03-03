@@ -38,7 +38,7 @@
             $email_body .= "<div><label>Message:<label>&nbsp;<span>".$user_message."</span></div>";
         }
 
-        $recipient = "cfpixel11@gmail.com"; // place recieving email here
+        $recipient = ""; // place recieving email here
 
         $email_body .= "</div>";
 
