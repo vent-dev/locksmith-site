@@ -95,7 +95,16 @@ html, body {
 .content-header {
     font-weight: bold;
     text-transform: uppercase;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
     font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.content-description {
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
 .content {
@@ -103,12 +112,11 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 10rem;
-    padding-left: 10rem;
-    padding-bottom: 13rem;
     font-family: sans-serif, serif;
     background-color: #28C2FF;
     color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .our-team {
@@ -117,6 +125,8 @@ html, body {
     gap: 5rem;
     text-align: center;
     flex-wrap: wrap;
+    padding-right: 10rem;
+    padding-left: 10rem;
 }
 
 .our-team div img {
@@ -126,6 +136,12 @@ html, body {
 
 .content-header {
     font-size: 2rem;
+}
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .our-services {
@@ -156,6 +172,23 @@ html, body {
     height: 20rem;
 }
 
+.book-now {
+    display: flex;
+    font-family: sans-serif, serif;
+    border: .2rem solid #28C2FF;
+    background-color: #28C2FF;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.book-now a {
+    color: #FCFCFC;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .contact-us {
     display: flex;
     flex-direction: column;
@@ -163,7 +196,10 @@ html, body {
     justify-content: center;
     background-color: black;
     color: white;
-    padding-bottom: 40rem;
+}
+
+#email, #subject {
+    width: 30rem;
 }
 
 .contact-form form {

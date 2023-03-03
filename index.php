@@ -139,6 +139,8 @@
                 </div>
             </div>
         </div>
+
+        <button class="book-now"><a href="/">Book Now</a></button>
     </div>
 
     <div class="contact-us">
@@ -150,7 +152,7 @@
                 Subject:
                 <input type="text" id="subject" name="user_subject">
                 Message:
-                <textarea name="user_message" id="user_message" cols="30" rows="10"></textarea>
+                <textarea name="user_message" id="user_message" cols="100" rows="30"></textarea>
                 <button type="submit">Submit</button>
                 <p class="output"><?php echo $output ?></p>
             </form>
