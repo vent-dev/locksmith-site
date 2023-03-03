@@ -160,7 +160,7 @@
     </div>
 
     <div class="footer">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, tempora quidem! Maiores distinctio ratione maxime, necessitatibus sequi iusto rerum omnis nemo quis nisi iure cumque laborum qui minus veniam mollitia!
+        Lorem ipsum, dolor amet consectetur adipisicing elit. Similique, tempora quidem! Maiores distinctio ratione maxime, necessitatibus sequi iusto rerum omnis nemo quis nisi iure cumque laborum qui minus veniam mollitia!
     </div>
 </body>
 </html>
