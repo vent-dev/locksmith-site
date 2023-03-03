@@ -146,7 +146,7 @@
     <div class="contact-us">
         <p class=contact-header>Contact Us</p>
         <div class="contact-form">
-            <form action="index.php" method="POST">
+            <form action="index.html" method="POST">
                 Email Address:
                 <input type="text" id="email" name="user_email">
                 Subject:
