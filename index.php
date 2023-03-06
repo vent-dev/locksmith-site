@@ -51,18 +51,18 @@
         } else {
             $output = "Something went wrong. Please try again or give us a call!";
         }
-    }
+    } 
     ?>
     </script>
 
     <div class="nav-bar">
-        <img src="images/logo.png" alt="">
+        <a href="/"><img src="images/logo.png" alt=""></a>
         <div class="nav-links">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="#our-team">Our Team</a></li>
                 <li><a href="#our-services">Our Services</a></li>
-                <li><a href="/">Contact Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
                 <img src="images/facebook.svg" alt="" style="width: 2rem; margin: 0">
             </ul>
         </div>
@@ -143,24 +143,17 @@
         <button class="book-now"><a href="/">Book Now</a></button>
     </div>
 
-    <div class="contact-us">
+    <div class="contact-us" id="contact-us">
         <p class=contact-header>Contact Us</p>
         <div class="contact-form">
-            <form action="index.html" method="POST">
-                Email Address:
-                <input type="text" id="email" name="user_email">
-                Subject:
-                <input type="text" id="subject" name="user_subject">
-                Message:
-                <textarea name="user_message" id="user_message" cols="100" rows="30"></textarea>
-                <button type="submit">Submit</button>
+            <form action="#contact-us" method="POST">
+                <input type="text" id="email" name="user_email" placeholder="Email">
+                <input type="text" id="subject" name="user_subject" placeholder="Subject">
+                <textarea name="user_message" id="user_message" placeholder="Message" cols="98" rows="10"></textarea>
+                <button class="submit" type="submit">Submit</button>
                 <p class="output"><?php echo $output ?></p>
             </form>
         </div>
-    </div>
-
-    <div class="footer">
-        Lorem ipsum, dolor amet consectetur adipisicing elit. Similique, tempora quidem! Maiores distinctio ratione maxime, necessitatibus sequi iusto rerum omnis nemo quis nisi iure cumque laborum qui minus veniam mollitia!
     </div>
 </body>
 </html>

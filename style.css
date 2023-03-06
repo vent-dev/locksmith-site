@@ -2,6 +2,8 @@ html, body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    max-width: 100vw;
+    padding-top: 5rem;
 }
 
 .nav-bar {
@@ -9,10 +11,16 @@ html, body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    background-color: white;
+    background-color: white !important;
     align-items: center; 
     overflow: hidden;
+    z-index: 1;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
+
 
 .nav-bar img {
     width: 10rem;
@@ -79,6 +87,7 @@ html, body {
     font-family: sans-serif, serif;
     color: #FCFCFC;
     font-size: 2rem;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
 .slide-button {
@@ -105,6 +114,7 @@ html, body {
 .content-description {
     text-align: center;
     padding-bottom: 2rem;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
 .content {
@@ -113,10 +123,11 @@ html, body {
     align-items: center;
     justify-content: center;
     font-family: sans-serif, serif;
-    background-color: #28C2FF;
+    background-color: #006ee6;
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
 .our-team {
@@ -127,6 +138,7 @@ html, body {
     flex-wrap: wrap;
     padding-right: 10rem;
     padding-left: 10rem;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
 .our-team div img {
@@ -151,6 +163,7 @@ html, body {
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
 .services-header {
@@ -165,6 +178,7 @@ html, body {
 .services-description {
     color: black;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .first-services img, .second-services img {
@@ -175,8 +189,8 @@ html, body {
 .book-now {
     display: flex;
     font-family: sans-serif, serif;
-    border: .2rem solid #28C2FF;
-    background-color: #28C2FF;
+    border: .2rem solid #006ee6;
+    background-color: #006ee6;
     padding: 1rem 2rem 1rem 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -196,10 +210,27 @@ html, body {
     justify-content: center;
     background-color: black;
     color: white;
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
 }
 
 #email, #subject {
-    width: 30rem;
+    display: inherit;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#user_message {
+    display: inherit;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 2rem;
 }
 
 .contact-header {
@@ -217,6 +248,15 @@ html, body {
     align-items: center;
 }
 
-footer {
-    text-align: center;
+.submit {
+    display: flex;
+    font-family: sans-serif, serif;
+    border: .2rem solid #006ee6;
+    background-color: #006ee6;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+    color: #FCFCFC;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
